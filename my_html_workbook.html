@@ -2,7 +2,7 @@
 
 <form action="/action_page.php" id = "first">
 
-  <label for="fname">First name:</label><br>
+  <label for="fname">You can't bring me down</label><br>
 
   <input type="text" id="fname" name="fname" value="John"><br>
 
@@ -28,3 +28,18 @@
 </form> 
 
 <iframe width="420" height="315" src="https://www.youtube.com/watch?v=nxcJW6bs5os"> </iframe>
+ <script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude +
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script> 
