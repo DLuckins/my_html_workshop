@@ -1,0 +1,18 @@
+#sub {
+    color:black;
+    background-color:white;
+}
+#sub:hover {
+    background-color: gray;
+    cursor:pointer;
+}
+#hell {
+    position: absolute;
+    right: 0px;
+    z-index:3;
+}
+#myImage {
+    position: absolute;
+    left: 0px;
+    z-index: 1;
+}
